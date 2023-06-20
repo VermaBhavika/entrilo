@@ -48,6 +48,17 @@ $breakpoints: (
     }
 }
 
-
+$card-bg: #fff;
+$list-group-item-bg-scale: -80%;
+$table-bg-scale: -80%;
+$gray-100: #f8f9fa;
+ $color-contrast-light: $gray-100;
+ @mixin gradient-bg($color: null) {
+     background-color: $color;
+ }
 @import './bootstrap-extended/variables.scss';
-@import './components/layout.scss'
+@import './components/variables';
+@import './components/layout.scss';
+@import './components/app-brand';
+@import './components/menu';
+@import './theme-default.scss';

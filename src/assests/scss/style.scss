@@ -1,4 +1,7 @@
+
+
 $breakpoints: (
+    md:768px,
     xl: 1200px
 );
 // Respond above.
@@ -49,5 +52,8 @@ $breakpoints: (
 }
 
 
+
 @import './bootstrap-extended/variables.scss';
-@import './components/layout.scss'
+@import './components/layout.scss';
+@import './components/base';
+@import './bootstrap-extended/utilities';

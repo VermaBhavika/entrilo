@@ -39,7 +39,7 @@
     color: $color;
     @include gradient-bg($background);
     border-color: $border;
-    @include box-shadow($btn-box-shadow);
+    // @include box-shadow($btn-box-shadow);
     box-shadow: 0 0.125rem 0.25rem 0 rgba($background, 0.4);
 
     &:hover {
@@ -67,7 +67,7 @@
       color: $active-color;
       background-color: $active-background;
       // Remove CSS gradients if they're enabled
-      background-image: if($enable-gradients, none, null);
+      // background-image: if($enable-gradients, none, null);
       border-color: $active-border;
 
       &:focus {

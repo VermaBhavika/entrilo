@@ -53,11 +53,11 @@
       }
 
       &:checked {
-        @if $enable-gradients {
-          background-image: escape-svg($checked-bg-image), var(--#{$variable-prefix}gradient);
-        } @else {
-          background-image: escape-svg($checked-bg-image);
-        }
+        // @if $enable-gradients {
+        //   background-image: escape-svg($checked-bg-image), var(--#{$variable-prefix}gradient);
+        // } @else {
+        //   background-image: escape-svg($checked-bg-image);
+        // }
       }
     }
   }

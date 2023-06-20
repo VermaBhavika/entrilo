@@ -19,7 +19,7 @@
   );
 
   #{$parent} {
-    @include gradient-bg($background);
+    // @include gradient-bg($background);
     border-color: $border;
     color: $color;
     .btn-close {

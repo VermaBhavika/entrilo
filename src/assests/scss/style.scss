@@ -1,135 +1,6 @@
-
-
-$breakpoints: (
-    md:768px,
-    xl: 1200px
-);
-// Respond above.
-@mixin media-breakpoint-up($breakpoint) {
-
-    // If the breakpoint exists in the map.
-    @if map-has-key($breakpoints, $breakpoint) {
-
-        // Get the breakpoint value.
-        $breakpoint-value: map-get($breakpoints, $breakpoint);
-
-        // Write the media query.
-        @media (min-width: $breakpoint-value) {
-            @content;
-        }
-
-        // If the breakpoint doesn't exist in the map.
-    }
-
-    @else {
-
-        // Log a warning.
-        @warn 'Invalid breakpoint: #{$breakpoint}.';
-    }
-}
-// Respond above.
-@mixin media-breakpoint-down($breakpoint) {
-
-    // If the breakpoint exists in the map.
-    @if map-has-key($breakpoints, $breakpoint) {
-
-        // Get the breakpoint value.
-        $breakpoint-value: map-get($breakpoints, $breakpoint);
-
-        // Write the media query.
-        @media (max-width: $breakpoint-value) {
-            @content;
-        }
-
-        // If the breakpoint doesn't exist in the map.
-    }
-
-    @else {
-
-        // Log a warning.
-        @warn 'Invalid breakpoint: #{$breakpoint}.';
-    }
-}
-
-$card-bg: #fff;
-$list-group-item-bg-scale: -80%;
-$table-bg-scale: -80%;
-$gray-100: #f8f9fa;
- $color-contrast-light: $gray-100;
- $zindex-fixed: 1030;
- $modal-backdrop-opacity: .5;
- $modal-backdrop-bg: #000;
- @mixin gradient-bg($color: null) {
-     background-color: $color;
- }
- 
-
-
-$enable-rounded : true;
- 
- @mixin border-radius($radius: $border-radius, $fallback-border-radius: false) {
-     @if $enable-rounded {
-         border-radius: valid-radius($radius);
-     }
-
-     @else if $fallback-border-radius !=false {
-         border-radius: $fallback-border-radius;
-     }
- }
-
- @mixin border-top-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-top-left-radius: valid-radius($radius);
-         border-top-right-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-end-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-top-right-radius: valid-radius($radius);
-         border-bottom-right-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-bottom-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-bottom-right-radius: valid-radius($radius);
-         border-bottom-left-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-start-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-top-left-radius: valid-radius($radius);
-         border-bottom-left-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-top-start-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-top-left-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-top-end-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-top-right-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-bottom-end-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-bottom-right-radius: valid-radius($radius);
-     }
- }
-
- @mixin border-bottom-start-radius($radius: $border-radius) {
-     @if $enable-rounded {
-         border-bottom-left-radius: valid-radius($radius);
-     }
- }
-
- @import './bootstrap-extended/bootstrap-common.scss';
+@import './bootstrap-extended/bootstrap_utilities.scss';
+@import './common.scss';
+@import './bootstrap-extended/bootstrap-common.scss';
 @import './bootstrap-extended/variables.scss';
 @import './components/variables';
 @import './bootstrap-extended/mixins/misc';
@@ -143,12 +14,9 @@ $enable-rounded : true;
 @import './bootstrap-extended/navbar';
 @import './components/mixins/navbar';
 @import './bootstrap-extended/nav';
-
 @import './pages/page-auth.scss';
 @import './bootstrap-extended/card';
 @import './components/mixins';
 @import './bootstrap-extended/mixins';
  
-body{
-    background-color: #f5f5f9;
-}
+

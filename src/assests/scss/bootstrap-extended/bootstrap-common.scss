@@ -1,0 +1,54 @@
+.d-flex {
+    display: flex !important;
+}
+
+.d-inline-flex {
+    display: inline-flex !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.d-grid {
+    display: grid !important;
+}
+
+.d-table {
+    display: table !important;
+}
+
+.d-table-row {
+    display: table-row !important;
+}
+
+.d-table-cell {
+    display: table-cell !important;
+}
+.d-none {
+    display: none !important;
+}
+
+.shadow {
+    box-shadow: 0 0.25rem 1rem rgba(161, 172, 184, 0.45) !important;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(161, 172, 184, 0.4) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 0.625rem 1.25rem rgba(161, 172, 184, 0.5) !important;
+}
+
+.shadow-none {
+    box-shadow: none !important;
+}
+
+.position-static {
+    position: static !important;
+}
+
+.position-relative {
+    position: relative !important;
+}

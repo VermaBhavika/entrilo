@@ -1,61 +1,119 @@
 @import './bootstrap-extended/variables.scss';
-body{
-    background-color: #f5f5f9 !important;
-    font-family: $font-family-sans-serif;
+
+body {
+  background-color: #f5f5f9 !important;
+  font-family: $font-family-sans-serif;
+  color: #697a8d
 }
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-weight: 500;
-    line-height: 1.1;
-    color: #566a7f;
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #566a7f;
+}
+
+.totalChart {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+h1,
+.h1 {
+  font-size: calc(1.3625rem + 1.35vw);
+}
+
+.bg-label-primary {
+  background-color: #e7e7ff !important;
+  color: #696cff !important;
+}
+
+.bg-label-info {
+  background-color: #d7f5fc !important;
+  color: #03c3ec !important;
+}
+
+.bg-label-warning {
+  background-color: #fff2d6 !important;
+  color: #ffab00 !important;
+}
+
+.lineGraph {
+
+  width: 100%;
+  height: 90px;
+}
+
+@media (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 2.375rem;
   }
-  
-  h1, .h1 {
-    font-size: calc(1.3625rem + 1.35vw);
+}
+
+h2,
+.h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+
+  h2,
+  .h2 {
+    font-size: 2rem;
   }
-  @media (min-width: 1200px) {
-    h1, .h1 {
-      font-size: 2.375rem;
-    }
+}
+
+h3,
+.h3 {
+  font-size: calc(1.2875rem + 0.45vw);
+}
+
+@media (min-width: 1200px) {
+
+  h3,
+  .h3 {
+    font-size: 1.625rem;
   }
-  
-  h2, .h2 {
-    font-size: calc(1.325rem + 0.9vw);
+}
+
+h4,
+.h4 {
+  font-size: calc(1.2625rem + 0.15vw);
+}
+
+@media (min-width: 1200px) {
+
+  h4,
+  .h4 {
+    font-size: 1.375rem;
   }
-  @media (min-width: 1200px) {
-    h2, .h2 {
-      font-size: 2rem;
-    }
-  }
-  
-  h3, .h3 {
-    font-size: calc(1.2875rem + 0.45vw);
-  }
-  @media (min-width: 1200px) {
-    h3, .h3 {
-      font-size: 1.625rem;
-    }
-  }
-  
-  h4, .h4 {
-    font-size: calc(1.2625rem + 0.15vw);
-  }
-  @media (min-width: 1200px) {
-    h4, .h4 {
-      font-size: 1.375rem;
-    }
-  }
-  
-  h5, .h5 {
-    font-size: 1.125rem;
-  }
-  
-  h6, .h6 {
-    font-size: 0.9375rem;
-  }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
+}
+
+h5,
+.h5 {
+  font-size: 1.125rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.9375rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

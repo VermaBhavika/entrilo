@@ -100,7 +100,7 @@ $card-inner-border-radius:          subtract($card-border-radius, $card-border-w
   .card .row-bordered > [class$=' col'],
   &::before,
   &::after {
-    border-color: $card-inner-border-color;
+    border-color: #d9dee3;
   }
 }
 

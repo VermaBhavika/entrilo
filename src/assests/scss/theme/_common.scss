@@ -39,6 +39,7 @@
   }
   a {
     color: $background;
+    text-decoration: none;
     &:hover {
       color: tint-color($background, 10%);
     }

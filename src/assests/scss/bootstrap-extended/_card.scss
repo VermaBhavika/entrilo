@@ -1,5 +1,6 @@
 // Cards
 // *******************************************************************************
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
 
 .card {
   background-clip: padding-box;

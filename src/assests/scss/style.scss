@@ -1,6 +1,6 @@
 @import './bootstrap-extended/bootstrap_utilities.scss';
 @import './common.scss';
-@import './bootstrap-extended/bootstrap-common.scss';
+
 @import './bootstrap-extended/variables.scss';
 @import './components/variables';
 @import './bootstrap-extended/mixins/misc';
@@ -18,5 +18,6 @@
 @import './bootstrap-extended/card';
 @import './components/mixins';
 @import './bootstrap-extended/mixins';
- 
+@import './components/avatar';
+ @import './bootstrap-extended/bootstrap-common.scss';
 

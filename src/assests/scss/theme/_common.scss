@@ -1,6 +1,6 @@
 // Theme mixin
 // *******************************************************************************
-  
+   
 @mixin template-common-theme($background, $color: null) {
   @include text-variant('.text-primary', $background);
   @include bg-variant('.bg-primary', $background);

@@ -1,7 +1,7 @@
 export const Login=()=>{
     return(
         <>
-            <h1>Login here</h1>
+           
             <div className="container-xxl">
       <div className="authentication-wrapper authentication-basic container-p-y">
         <div className="authentication-inner">

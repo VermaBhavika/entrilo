@@ -71,3 +71,9 @@ $gray-100: #f8f9fa;
 @import './components/app-brand';
 @import './components/menu';
 @import './theme-default.scss';
+@import './pages/page-auth.scss';
+@import './bootstrap-extended/card';
+
+body{
+    background-color: #f5f5f9;
+}

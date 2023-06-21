@@ -40,10 +40,10 @@
 }
 
 // Convert size px to rem
-@function px-to-rem($value) {
-  // Assumes the browser default font size = `16px`
-  @return (divide(strip-unit($value), 16)) * 1rem;
-}
+// @function px-to-rem($value) {
+//   // Assumes the browser default font size = `16px`
+//  // @return (strip-unit($value), 16) * 1rem;
+// }
 
 // Convert size rem to px
 @function rem-to-px($value) {

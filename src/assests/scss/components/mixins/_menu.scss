@@ -66,9 +66,9 @@
       background: linear-gradient($bg 41%, rgba($bg, 0.11) 95%, rgba($bg, 0));
     }
 
-    .menu-text {
-      color: map-get($colors, active-color);
-    }
+    // .menu-text {
+    //   color: map-get($colors, active-color);
+    // }
 
     .menu-header {
       color: map-get($colors, muted-color);

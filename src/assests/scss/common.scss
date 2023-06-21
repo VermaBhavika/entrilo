@@ -1,8 +1,5 @@
 @import './bootstrap-extended/variables.scss';
-body{
-    background-color: #f5f5f9;
-    font-family: $font-family-sans-serif;
-}
+
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -59,3 +56,38 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     margin-top: 0;
     margin-bottom: 1rem;
   }
+  .form-label {
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #566a7f;
+}
+.form-label, .col-form-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: inherit;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.form-control::-moz-placeholder {
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  
+  .form-control::placeholder {
+    transition: all 0.25s ease;
+  }
+  .form-control:focus::-moz-placeholder {
+    transform: translate(5px);
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .form-control:focus::placeholder {
+    transform: translate(5px);
+    transition: all 0.25s ease;
+  }
+  

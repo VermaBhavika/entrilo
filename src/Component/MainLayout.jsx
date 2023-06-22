@@ -3,7 +3,10 @@ import Avatar1 from '../assests/img/avatars/1.png'
 import ChartSuccess from '../assests/img/icons/unicons/chart-success.png';
 import WalletInfo from '../assests/img/icons/unicons/wallet-info.png';
 import Paypal from  '../assests/img/icons/unicons/paypal.png';
-import CcPrimary from '../assests/img/icons/unicons/cc-primary.png'
+import CcPrimary from '../assests/img/icons/unicons/cc-primary.png';
+import TotalChart from '../assests/img/illustrations/total-chart.png';
+import GrowthChart from '../assests/img/illustrations/growth-chart.png';
+import lineGraph from '../assests/img/illustrations/line-graph.png';
 import { useEffect } from 'react';
 
 export const MainLayout = () =>{
@@ -297,7 +300,7 @@ export const MainLayout = () =>{
                                             <div className="row row-bordered g-0">
                                                 <div className="col-md-8">
                                                     <h5 className="card-header m-0 me-2 pb-3">Total Revenue</h5>
-                                                    <div id="totalRevenueChart" className="px-2"></div>
+                                                    <img src={TotalChart} className='totalChart'/>
                                                 </div>
                                                 <div className="col-md-4">
                                                     <div className="card-body">
@@ -321,7 +324,7 @@ export const MainLayout = () =>{
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div id="growthChart"></div>
+                                                    <img src={GrowthChart} />
                                                     <div className="text-center fw-semibold pt-3 mb-2">62% Company Growth</div>
 
                                                     <div className="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between">
@@ -428,7 +431,7 @@ export const MainLayout = () =>{
                                                                     <h3 className="mb-0">$84,686k</h3>
                                                                 </div>
                                                             </div>
-                                                            <div id="profileReportChart"></div>
+                                                            <img src={lineGraph} className='lineGraph'/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -439,35 +442,6 @@ export const MainLayout = () =>{
                                
                             </div>
 
-                            <footer className="content-footer footer bg-footer-theme">
-                                <div className="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                                    <div className="mb-2 mb-md-0">
-                                        ©
-                                        <script>
-                                            document.write(new Date().getFullYear());
-                                        </script>
-                                        , made with ❤️ by
-                                        <a href="https://themeselection.com" target="_blank" className="footer-link fw-bolder">ThemeSelection</a>
-                                    </div>
-                                    <div>
-                                        <a href="https://themeselection.com/license/" className="footer-link me-4" target="_blank">License</a>
-                                        <a href="https://themeselection.com/" target="_blank" className="footer-link me-4">More Themes</a>
-
-                                        <a
-                                            href="https://themeselection.com/demo/sneat-bootstrap-html-admin-template/documentation/"
-                                            target="_blank"
-                                            className="footer-link me-4"
-                                        >Documentation</a
-                                        >
-
-                                        <a
-                                            href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                                            target="_blank"
-                                            className="footer-link me-4"
-                                        >Support</a>
-                                    </div>
-                                </div>
-                            </footer>
 
                             <div className="content-backdrop fade"></div>
                         </div>

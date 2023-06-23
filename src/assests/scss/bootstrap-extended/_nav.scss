@@ -38,7 +38,12 @@
 
 .nav-pills .nav-link {
   &:not(.active, .disabled) {
-    color: $headings-color;
+    color: #566a7f;
+  }
+}
+.nav-pills .nav-link {
+  &:not(.active, .disabled):hover {
+    color: #5f61e6;
   }
 }
 

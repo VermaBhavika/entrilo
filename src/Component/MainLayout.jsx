@@ -36,26 +36,26 @@ export const MainLayout = () =>{
                             <li className="menu-header small text-uppercase">
                                 <span className="menu-header-text">Pages</span>
                             </li>
-                            <li class="menu-item">
-                                <a href="javascript:void(0);" class="menu-link menu-toggle" onClick={() => setShowMenu(!showMenu)} >
-                                    <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                            <li className="menu-item">
+                                <a href="javascript:void(0);" className="menu-link menu-toggle" onClick={() => setShowMenu(!showMenu)} >
+                                    <i className="menu-icon tf-icons bx bx-lock-open-alt"></i>
                                     <div data-i18n="Authentications">Authentications</div>
                                 </a>
                                 {showMenu && (
-                                    <ul class="menu-sub">
-                                        <li class="menu-item">
-                                            <div class="menu-link" target="_blank">
+                                    <ul className="menu-sub">
+                                        <li className="menu-item">
+                                            <div className="menu-link" target="_blank">
                                                 <div data-i18n="Basic">Login</div>
                                             </div>
                                         </li>
-                                        <li class="menu-item">
+                                        <li className="menu-item">
                                             
-                                            <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                                            <a href="auth-register-basic.html" className="menu-link" target="_blank">
                                                 <div data-i18n="Basic">Register</div>
                                             </a>
                                         </li>
-                                        <li class="menu-item">
-                                            <a href="auth-forgot-password-basic.html" class="menu-link" target="_blank">
+                                        <li className="menu-item">
+                                            <a href="auth-forgot-password-basic.html" className="menu-link" target="_blank">
                                                 <div data-i18n="Basic">Forgot Password</div>
                                             </a>
                                         </li>

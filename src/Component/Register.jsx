@@ -27,7 +27,6 @@ export const Register = ()=>{
                     id="username"
                     name="username"
                     placeholder="Enter your username"
-                    autofocus
                   />
                 </div>
                 <div className="mb-3">

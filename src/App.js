@@ -1,5 +1,6 @@
 import './assests/scss/style.scss';
 import './assests/fonts/boxicons.css'
+import bootstrap from 'bootstrap';
 import { MainLayout } from './Component/MainLayout';
 import {Login} from './Component/Login';
 import { Register } from './Component/Register';
@@ -9,12 +10,16 @@ import { List_Group } from './Component/List_Group';
 import { Cards } from './Component/Card';
 import { Spinner } from './Component/Spinner';
 import { Breadcrumbs } from './Component/Breadcrumbs';
+import { Pills } from './Component/Pills';
+import { Toast } from './Component/Toast';
+import { Dropdowns } from './Component/Dropdowns';
+import { DropZone  } from './Component/DropZone';
 
 function App() {
   return (
     <>
       {/* <MainLayout/> */}
-      <Login />
+      {/* <Login />
       <Register />
       <ForgotPassword />
       <Forms />
@@ -22,6 +27,11 @@ function App() {
       <Cards />
       <Spinner />
       <Breadcrumbs />
+      <ForgotPassword /> */}
+      <Pills />
+      <Toast/>
+      <Dropdowns/>
+      <DropZone />
     </>
   );
 }

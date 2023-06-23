@@ -3151,22 +3151,23 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    background-color: #696cff;
+    border-color: #696cff;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
+    background-color: #5f61e6;
+    border-color: #5f61e6;
+    transform: translateY(-1px);
 }
 
-.btn-check:focus+.btn-primary,
-.btn-primary:focus {
+.btn-primary:hover {
     color: #fff;
-    background-color: #0b5ed7;
-    border-color: #0a58ca;
-    box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
+    background-color: #5f61e6;
+    border-color: #5f61e6;
+    transform: translateY(-1px);
 }
 
 .btn-check:active+.btn-primary,
@@ -3196,14 +3197,16 @@ fieldset:disabled .btn {
 
 .btn-secondary {
     color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
+    background-color: #8592a3;
+    border-color: #8592a3;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(133, 146, 163, 0.4);
 }
 
 .btn-secondary:hover {
     color: #fff;
-    background-color: #5c636a;
-    border-color: #565e64;
+    background-color: #788393;
+    border-color: #788393;
+    transform: translateY(-1px);
 }
 
 .btn-check:focus+.btn-secondary,
@@ -3241,22 +3244,24 @@ fieldset:disabled .btn {
 
 .btn-success {
     color: #fff;
-    background-color: #198754;
-    border-color: #198754;
+    background-color: #71dd37;
+    border-color: #71dd37;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(113, 221, 55, 0.4);
 }
 
 .btn-success:hover {
     color: #fff;
-    background-color: #157347;
-    border-color: #146c43;
+    background-color: #66c732;
+    border-color: #66c732;
+    transform: translateY(-1px);
 }
 
 .btn-check:focus+.btn-success,
 .btn-success:focus {
     color: #fff;
-    background-color: #157347;
-    border-color: #146c43;
-    box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+    background-color: #66c732;
+        border-color: #66c732;
+        box-shadow: 0 0.125rem 0.25rem 0 rgba(113, 221, 55, 0.4);
 }
 
 .btn-check:active+.btn-success,
@@ -3265,8 +3270,8 @@ fieldset:disabled .btn {
 .btn-success:active,
 .show>.btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #146c43;
-    border-color: #13653f;
+background-color: #66c732;
+    border-color: #66c732;
 }
 
 .btn-check:active+.btn-success:focus,
@@ -3285,15 +3290,17 @@ fieldset:disabled .btn {
 }
 
 .btn-info {
-    color: #000;
-    background-color: #0dcaf0;
-    border-color: #0dcaf0;
+    color: #fff;
+    background-color: #03c3ec;
+    border-color: #03c3ec;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(3, 195, 236, 0.4);
 }
 
 .btn-info:hover {
-    color: #000;
-    background-color: #31d2f2;
-    border-color: #25cff2;
+    color: #fff;
+    background-color: #03b0d4;
+    border-color: #03b0d4;
+    transform: translateY(-1px);
 }
 
 .btn-check:focus+.btn-info,
@@ -3330,22 +3337,24 @@ fieldset:disabled .btn {
 }
 
 .btn-warning {
-    color: #000;
-    background-color: #ffc107;
-    border-color: #ffc107;
+    color: #fff;
+    background-color: #ffab00;
+    border-color: #ffab00;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 171, 0, 0.4);
 }
 
 .btn-warning:hover {
-    color: #000;
-    background-color: #ffca2c;
-    border-color: #ffc720;
+    color: #fff;
+    background-color: #e69a00;
+    border-color: #e69a00;
+    transform: translateY(-1px);
 }
 
 .btn-check:focus+.btn-warning,
 .btn-warning:focus {
     color: #000;
-    background-color: #ffca2c;
-    border-color: #ffc720;
+    background-color: #e69a00;
+        border-color: #e69a00;
     box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
 }
 
@@ -3355,8 +3364,8 @@ fieldset:disabled .btn {
 .btn-warning:active,
 .show>.btn-warning.dropdown-toggle {
     color: #000;
-    background-color: #ffcd39;
-    border-color: #ffc720;
+    background-color: #e69a00;
+        border-color: #e69a00;
 }
 
 .btn-check:active+.btn-warning:focus,
@@ -3376,21 +3385,23 @@ fieldset:disabled .btn {
 
 .btn-danger {
     color: #fff;
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #ff3e1d;
+    border-color: #ff3e1d;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 62, 29, 0.4);
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #bb2d3b;
-    border-color: #b02a37;
+    background-color: #e6381a;
+    border-color: #e6381a;
+    transform: translateY(-1px);
 }
 
 .btn-check:focus+.btn-danger,
 .btn-danger:focus {
     color: #fff;
-    background-color: #bb2d3b;
-    border-color: #b02a37;
+    background-color: #e6381a;
+        border-color: #e6381a;
     box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
 }
 
@@ -4430,7 +4441,7 @@ fieldset:disabled .btn {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #0d6efd;
+    // background-color: #0d6efd;
 }
 
 .nav-fill .nav-item,
@@ -5875,7 +5886,6 @@ fieldset:disabled .btn {
     background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
     border: 0;
     border-radius: 0.25rem;
-    opacity: 0.5;
 }
 
 .btn-close:hover {
@@ -5904,17 +5914,73 @@ fieldset:disabled .btn {
 }
 
 .toast {
-    width: 350px;
+width: 350px;
     max-width: 100%;
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     pointer-events: auto;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem;
+    border: 0 solid rgba(67, 89, 113, 0.1);
+    box-shadow: 0 0.25rem 1rem rgba(161, 172, 184, 0.45);
+    border-radius: 0.5rem;
+}
+.bg-info.toast,
+.bg-info.bs-toast {
+    color: #fff;
+    background-color: rgba(3, 195, 236, 0.85) !important;
+    box-shadow: 0 0.25rem 1rem rgba(3, 195, 236, 0.4);
 }
 
+.bg-info.toast .toast-header,
+.bg-info.bs-toast .toast-header, .bg-danger.toast .toast-header,
+.bg-danger.bs-toast .toast-header, .bg-success.toast .toast-header,
+.bg-success.bs-toast .toast-header, .bg-secondary.toast .toast-header,
+.bg-secondary.bs-toast .toast-header {
+    color: #fff;
+}
+ 
+.bg-info.toast .toast-header .btn-close,
+.bg-info.bs-toast .toast-header .btn-close {
+    background-color: #03c3ec !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='150px' height='151px' viewBox='0 0 150 151' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-1' points='131.251657 0 74.9933705 56.25 18.7483426 0 0 18.75 56.2450278 75 0 131.25 18.7483426 150 74.9933705 93.75 131.251657 150 150 131.25 93.7549722 75 150 18.75'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='🎨-%5BSetup%5D:-Colors-&amp;-Shadows' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-225.000000, -250.000000)'%3E%3Cg id='Icon-Color' transform='translate(225.000000, 250.500000)'%3E%3Cuse fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill-opacity='1' fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(3, 195, 236, 0.4) !important;
+}
+.bg-danger.toast,
+.bg-danger.bs-toast {
+    color: #fff;
+    background-color: rgba(255, 62, 29, 0.85) !important;
+    box-shadow: 0 0.25rem 1rem rgba(255, 62, 29, 0.4);
+}
+.bg-danger.toast .toast-header .btn-close,
+.bg-danger.bs-toast .toast-header .btn-close {
+    background-color: #ff3e1d !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='150px' height='151px' viewBox='0 0 150 151' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-1' points='131.251657 0 74.9933705 56.25 18.7483426 0 0 18.75 56.2450278 75 0 131.25 18.7483426 150 74.9933705 93.75 131.251657 150 150 131.25 93.7549722 75 150 18.75'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='🎨-%5BSetup%5D:-Colors-&amp;-Shadows' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-225.000000, -250.000000)'%3E%3Cg id='Icon-Color' transform='translate(225.000000, 250.500000)'%3E%3Cuse fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill-opacity='1' fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(255, 62, 29, 0.4) !important;
+}
+.bg-success.toast,
+.bg-success.bs-toast {
+    color: #fff;
+    background-color: rgba(113, 221, 55, 0.85) !important;
+    box-shadow: 0 0.25rem 1rem rgba(113, 221, 55, 0.4);
+}
+.bg-success.toast .toast-header .btn-close,
+.bg-success.bs-toast .toast-header .btn-close {
+    background-color: #71dd37 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='150px' height='151px' viewBox='0 0 150 151' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-1' points='131.251657 0 74.9933705 56.25 18.7483426 0 0 18.75 56.2450278 75 0 131.25 18.7483426 150 74.9933705 93.75 131.251657 150 150 131.25 93.7549722 75 150 18.75'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='🎨-%5BSetup%5D:-Colors-&amp;-Shadows' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-225.000000, -250.000000)'%3E%3Cg id='Icon-Color' transform='translate(225.000000, 250.500000)'%3E%3Cuse fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill-opacity='1' fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(113, 221, 55, 0.4) !important;
+}
+.bg-secondary.toast, .bg-secondary.bs-toast {
+    color: #fff;
+    background-color: rgba(133, 146, 163, 0.85) !important;
+    box-shadow: 0 0.25rem 1rem rgba(133, 146, 163, 0.4);
+}
+
+.bg-secondary.toast .toast-header .btn-close,
+.bg-secondary.bs-toast .toast-header .btn-close {
+    background-color: #8592a3 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='150px' height='151px' viewBox='0 0 150 151' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-1' points='131.251657 0 74.9933705 56.25 18.7483426 0 0 18.75 56.2450278 75 0 131.25 18.7483426 150 74.9933705 93.75 131.251657 150 150 131.25 93.7549722 75 150 18.75'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='🎨-%5BSetup%5D:-Colors-&amp;-Shadows' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-225.000000, -250.000000)'%3E%3Cg id='Icon-Color' transform='translate(225.000000, 250.500000)'%3E%3Cuse fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill-opacity='1' fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(133, 146, 163, 0.4) !important;
+}
 .toast:not(.showing):not(.show) {
     opacity: 0;
 }
@@ -5938,25 +6004,49 @@ fieldset:disabled .btn {
 .toast-header {
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.75rem;
+    padding: 1.25rem 1.25rem;
     color: #6c757d;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: transparent;
     background-clip: padding-box;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px);
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.toast.bs-toast .toast-header {
+    padding-bottom: 0.5rem;
+    position: relative;
 }
 
 .toast-header .btn-close {
-    margin-right: -0.375rem;
-    margin-left: 0.75rem;
+    margin-right: -0.625rem;
+    margin-left: 1.25rem;
+}
+.bg-info.toast .toast-header .btn-close,
+.bg-info.bs-toast .toast-header .btn-close {
+    background-color: #03c3ec !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='150px' height='151px' viewBox='0 0 150 151' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cpolygon id='path-1' points='131.251657 0 74.9933705 56.25 18.7483426 0 0 18.75 56.2450278 75 0 131.25 18.7483426 150 74.9933705 93.75 131.251657 150 150 131.25 93.7549722 75 150 18.75'%3E%3C/polygon%3E%3C/defs%3E%3Cg id='🎨-%5BSetup%5D:-Colors-&amp;-Shadows' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Artboard' transform='translate(-225.000000, -250.000000)'%3E%3Cg id='Icon-Color' transform='translate(225.000000, 250.500000)'%3E%3Cuse fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill-opacity='1' fill='%23fff' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    box-shadow: 0 0.1875rem 0.375rem 0 rgba(3, 195, 236, 0.4) !important;
+}
+.toast.bs-toast .toast-header .btn-close {
+    position: absolute;
+    top: -8px;
+    border-radius: 0.375rem;
+    padding: 0.45rem;
+    background-size: 0.625em;
+    transition: all 0.23s ease 0.1s;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(161, 172, 184, 0.4);
+    right: 2px;
 }
 
 .toast-body {
     padding: 0.75rem;
     word-wrap: break-word;
+    padding-top: 0;
 }
-
+.fw-semibold {
+    font-weight: 600 !important;
+}
 .modal {
     position: fixed;
     top: 0;

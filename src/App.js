@@ -8,6 +8,7 @@ import { ForgotPassword } from './Component/ForgotPassword';
 import { Pills } from './Component/Pills';
 import { Toast } from './Component/Toast';
 import { Dropdowns } from './Component/Dropdowns';
+import { DropZone  } from './Component/DropZone';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Pills />
       <Toast/>
       <Dropdowns/>
+      <DropZone />
     </>
   );
 }

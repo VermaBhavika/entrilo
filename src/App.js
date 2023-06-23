@@ -4,7 +4,11 @@ import { MainLayout } from './Component/MainLayout';
 import {Login} from './Component/Login';
 import { Register } from './Component/Register';
 import { ForgotPassword } from './Component/ForgotPassword';
-
+import {Forms} from './Component/Forms';
+import { List_Group } from './Component/List_Group';
+import { Cards } from './Component/Card';
+import { Spinner } from './Component/Spinner';
+import { Breadcrumbs } from './Component/Breadcrumbs';
 
 function App() {
   return (
@@ -13,6 +17,11 @@ function App() {
       <Login />
       <Register />
       <ForgotPassword />
+      <Forms />
+      <List_Group />
+      <Cards />
+      <Spinner />
+      <Breadcrumbs />
     </>
   );
 }

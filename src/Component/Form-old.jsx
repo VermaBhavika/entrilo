@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const Form = () =>{
+export const Form_old = () =>{
     const data = [
         { type: 'email', label: 'username', value: '' },
         { type: 'password', label: 'password', value: 'password' },

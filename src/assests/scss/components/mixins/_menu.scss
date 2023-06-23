@@ -22,7 +22,7 @@
       color: map-get($colors, color);
       &:hover,
       &:focus {
-        color: map-get($colors, active-color);
+        // color: map-get($colors, active-color);
       }
 
       &.active {

@@ -17,7 +17,6 @@ import { Images } from './Images'
 export const DesignComponent = () => {
     return(
         <>
-            <h1>Design Component</h1>
             <Forms />
             <List_Group />
             <Cards />

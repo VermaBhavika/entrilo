@@ -188,6 +188,7 @@
 
     > .menu-item {
       margin: $menu-item-spacer 0;
+      cursor: pointer;
       // Sneat menu-link spacing
       .menu-link {
         margin: $menu-vertical-link-margin-y $menu-vertical-link-margin-x;

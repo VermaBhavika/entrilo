@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <MainLayout/>
-      <Login />
+      {/* <Login />
       <Register />
       <ForgotPassword />
-     <DesignComponent/>
+     <DesignComponent/> */}
     </>
   );
 }

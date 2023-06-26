@@ -15,11 +15,14 @@ import { Toast } from './Component/Toast';
 import { Dropdowns } from './Component/Dropdowns';
 import { DropZone  } from './Component/DropZone';
 import { Images } from './Component/Images';
+import { ProgressBar } from './Component/ProgressBar';
+import { Modal } from './Component/Modal';
+import { BasicTable } from './Component/BasicTable';
 
 function App() {
   return (
     <>
-       <MainLayout/> 
+      <MainLayout/>
       <Login />
       <Register />
       <ForgotPassword />
@@ -33,6 +36,9 @@ function App() {
       <Dropdowns/>
       <DropZone />
       <Images />
+      <ProgressBar/>
+      <Modal/>
+      <BasicTable/>
     </>
   );
 }

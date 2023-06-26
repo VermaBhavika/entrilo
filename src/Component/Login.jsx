@@ -30,7 +30,6 @@ export const Login=()=>{
                     id="email"
                     name="email-username"
                     placeholder="Enter your email or username"
-                    autofocus
                   />
                 </div>
                 <div className="mb-3 form-password-toggle">

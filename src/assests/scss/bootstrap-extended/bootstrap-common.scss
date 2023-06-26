@@ -5428,14 +5428,20 @@ background-color: #66c732;
 }
 
 .progress {
-    display: flex;
-    height: 1rem;
-    overflow: hidden;
-    font-size: 0.75rem;
-    background-color: #e9ecef;
-    border-radius: 0.25rem;
+        display: flex;
+            height: 0.75rem;
+            overflow: hidden;
+            font-size: 0.625rem;
+            background-color: rgba(67, 89, 113, 0.1);
+            border-radius: 10rem;
 }
-
+.demo-vertical-spacing>* {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element> :first-child {
+    margin-top: 0 !important;
+}
 .progress-bar {
     display: flex;
     flex-direction: column;

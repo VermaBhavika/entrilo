@@ -26,7 +26,6 @@ export const ForgotPassword = ()=>{
                     id="email"
                     name="email"
                     placeholder="Enter your email"
-                    autofocus
                   />
                 </div>
                 <button className="btn btn-primary d-grid w-100">Send Reset Link</button>

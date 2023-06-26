@@ -2,7 +2,7 @@ import './assests/scss/style.scss';
 import './assests/fonts/boxicons.css'
 import bootstrap from 'bootstrap';
 import { MainLayout } from './Component/MainLayout';
-import {Login} from './Component/Login';
+import { Login } from './Component/Login';
 import { Register } from './Component/Register';
 import { ForgotPassword } from './Component/ForgotPassword';
 import {Forms} from './Component/Forms';
@@ -19,12 +19,13 @@ import { ProgressBar } from './Component/ProgressBar';
 import { Modal } from './Component/Modal';
 import { BasicTable } from './Component/BasicTable';
 import {Carousel} from './Component/Carousel';
+import { DesignComponent } from './Component/DesignComponent';
 
 function App() {
   return (
     <>
-      <MainLayout/>
-      <Login />
+     <MainLayout/>
+      {/* <Login />
       <Register />
       <ForgotPassword />
       <Forms />
@@ -40,7 +41,8 @@ function App() {
       <ProgressBar/>
       <Modal/>
       <BasicTable/>
-      <Carousel />
+      <Carousel />  */}
+     <DesignComponent/>
     </>
   );
 }

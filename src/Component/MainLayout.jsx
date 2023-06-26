@@ -1,23 +1,16 @@
 
 import { useState, React } from 'react';
 import { DesignComponent } from './DesignComponent';
-import { Dashboard } from './Dashboard'
+import { Dashboard } from './Dashboard';
+import { ForgotPassword } from './ForgotPassword';
+import { Login } from './Login';
+import { Register } from './Register'
 import Avatar1 from '../assests/img/avatars/1.png'
 
 export const MainLayout = () => {
 
     const [component, setComponent] = useState('dashboard');
-    // const [design, setDesign] = useState(false);
-
-    // function dashboardComponent() {
-    //     setDashboard(!dashboard);
-    // }
-    // function designComponent() {
-    //     setDesign(!design);
-    // }
-
-
-
+    const [showMenu, setShowMenu] = useState(false)
     return (
         <div className="layout-wrapper layout-content-navbar">
             <div className="layout-container">
@@ -29,14 +22,41 @@ export const MainLayout = () => {
                     </div>
                     <div className="menu-inner-shadow"></div>
                     <ul className="menu-inner py-1">
-                        <li className={`menu-item ${component == 'dashboard' && 'active'}`} onClick={() => {setComponent('dashboard')
-                    }}>
+                        <li className={`menu-item ${component == 'dashboard' && 'active'}`} onClick={() => {setComponent('dashboard')}}>
                             <div className="menu-link" >
                                 <i className="menu-icon tf-icons bx bx-home-circle"></i>
                                 <div data-i18n="Analytics">Dashboard</div>
                             </div>
                         </li>
+                        <li className="menu-header small text-uppercase">
+                            <span className="menu-header-text">Pages</span>
+                        </li>
+                        <li className="menu-item">
+                            <a href="javascript:void(0);" className="menu-link menu-toggle" onClick={() => setShowMenu(!showMenu)} >
+                                <i className="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                                <div data-i18n="Authentications">Authentications</div>
+                            </a>
+                            {showMenu ?
+                                <ul className="menu-sub">
+                                    <li className={`menu-item ${component == 'login' && 'active'}`} onClick={() => { setComponent('login') }}>
+                                        <div className="menu-link">
+                                            <div data-i18n="Basic">Login</div>
+                                        </div>
+                                    </li>
+                                    <li className="menu-item" onClick={() => { setComponent('register') }}>
 
+                                        <div className="menu-link">
+                                            <div data-i18n="Basic">Register</div>
+                                        </div>
+                                    </li>
+                                    <li className="menu-item" onClick={() => { setComponent('forgotPassword') }}>
+                                        <div className="menu-link">
+                                            <div data-i18n="Basic">Forgot Password</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            : ' ' }
+                        </li>        
                         <li className={`menu-item ${component == 'design' && 'active'}`} onClick={() => setComponent('design')}>
                             <div className="menu-link">
                                 <i className="menu-icon tf-icons bx bx-home-circle"></i>
@@ -133,8 +153,11 @@ export const MainLayout = () => {
                             </div>
                         </nav>
 
-                        {component == 'dashboard' && <Dashboard />}
-                        {component == 'design' && <DesignComponent /> }
+                        {component === 'dashboard' && <Dashboard />}
+                        {component === 'design' && <DesignComponent /> }
+                        {component === 'forgotPassword' && <ForgotPassword/>}
+                        {component === 'login' && <Login />}
+                        {component === 'register' && <Register/>}
                     </div>
                 </div>
             </div>

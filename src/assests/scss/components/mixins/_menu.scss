@@ -38,7 +38,7 @@
 
     .menu-item.open:not(.menu-item-closing) > .menu-toggle,
     .menu-item.active > .menu-link {
-      color: map-get($colors, active-color);
+      color: #566a7f;
     }
 
     //vertical menu active item bg color

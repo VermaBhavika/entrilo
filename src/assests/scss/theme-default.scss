@@ -75,7 +75,7 @@ $primary-color: #696cff;
 
   // Sub menu item link bullet
   .menu-sub > .menu-item > .menu-link:before {
-    background-color: rgba-to-hex($gray-400, $rgba-to-hex-bg) !important;
+    background-color:#b4bdc6 !important;
   }
   // Sub menu item link active bullet
   .menu-sub > .menu-item.active > .menu-link:not(.menu-toggle):before {

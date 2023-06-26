@@ -14,12 +14,13 @@ import { Pills } from './Component/Pills';
 import { Toast } from './Component/Toast';
 import { Dropdowns } from './Component/Dropdowns';
 import { DropZone  } from './Component/DropZone';
+import { Images } from './Component/Images';
 
 function App() {
   return (
     <>
-      {/* <MainLayout/> */}
-      {/* <Login />
+       <MainLayout/> 
+      <Login />
       <Register />
       <ForgotPassword />
       <Forms />
@@ -27,11 +28,11 @@ function App() {
       <Cards />
       <Spinner />
       <Breadcrumbs />
-      <ForgotPassword /> */}
       <Pills />
       <Toast/>
       <Dropdowns/>
       <DropZone />
+      <Images />
     </>
   );
 }

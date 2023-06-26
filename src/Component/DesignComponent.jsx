@@ -14,6 +14,7 @@ import { Typography } from './Typography';
 import { Accordion } from './Accordion';
 import { Images } from './Images';
 import { Carousel } from './Carousel';
+import { Skeleton } from './Skeleton';
 
 export const DesignComponent = () => {
     return(
@@ -35,6 +36,7 @@ export const DesignComponent = () => {
             <Accordion />
             <Images/>
             <Carousel />
+            <Skeleton />
         </>
     )
 }

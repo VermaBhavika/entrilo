@@ -8,11 +8,6 @@ function App() {
   return (
     <>
       <MainLayout/>
-
-      {/* <Login />
-      <Register />
-      <ForgotPassword />
-     <DesignComponent/> */}
     </>
   );
 }

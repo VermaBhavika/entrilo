@@ -18,6 +18,7 @@ import { Images } from './Component/Images';
 import { ProgressBar } from './Component/ProgressBar';
 import { Modal } from './Component/Modal';
 import { BasicTable } from './Component/BasicTable';
+import {Carousel} from './Component/Carousel';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <ProgressBar/>
       <Modal/>
       <BasicTable/>
+      <Carousel />
     </>
   );
 }

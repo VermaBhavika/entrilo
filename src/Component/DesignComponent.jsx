@@ -12,6 +12,7 @@ import { Modal } from './Modal';
 import { BasicTable } from './BasicTable';
 import { Typography } from './Typography';
 import { Accordion } from './Accordion';
+import { Images } from './Images'
 
 export const DesignComponent = () => {
     return(
@@ -31,6 +32,7 @@ export const DesignComponent = () => {
             <BasicTable />
             <Typography />
             <Accordion />
+            <Images/>
         </>
     )
 }

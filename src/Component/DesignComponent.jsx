@@ -12,11 +12,13 @@ import { Modal } from './Modal';
 import { BasicTable } from './BasicTable';
 import { Typography } from './Typography';
 import { Accordion } from './Accordion';
-import { Images } from './Images'
+import { Images } from './Images';
+import { Carousel } from './Carousel';
 
 export const DesignComponent = () => {
     return(
-        <>
+        <>  
+            
             <Forms />
             <List_Group />
             <Cards />
@@ -32,6 +34,7 @@ export const DesignComponent = () => {
             <Typography />
             <Accordion />
             <Images/>
+            <Carousel />
         </>
     )
 }

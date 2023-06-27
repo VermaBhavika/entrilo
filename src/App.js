@@ -1,7 +1,7 @@
 import './assests/scss/style.scss';
 import './assests/fonts/boxicons.css'
 import bootstrap from 'bootstrap';
-import { MainLayout } from './Component/MainLayout';
+import { MainLayout } from './Component/pages/MainLayout';
 
 
 function App() {
@@ -12,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 

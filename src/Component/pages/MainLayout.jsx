@@ -5,7 +5,7 @@ import { Dashboard } from './Dashboard';
 import { ForgotPassword } from './ForgotPassword';
 import { Login } from './Login';
 import { Register } from './Register'
-import Avatar1 from '../assests/img/avatars/1.png'
+import Avatar1 from '../../assests/img/avatars/1.png'
 
 export const MainLayout = () => {
 

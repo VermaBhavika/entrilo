@@ -31,10 +31,10 @@ export const MainLayout = () => {
                             <span className="menu-header-text">Pages</span>
                         </li>
                         <li className="menu-item">
-                            <a href="javascript:void(0);" className="menu-link menu-toggle" onClick={() => setShowMenu(!showMenu)} >
+                            <div className="menu-link menu-toggle" onClick={() => setShowMenu(!showMenu)} >
                                 <i className="menu-icon tf-icons bx bx-lock-open-alt"></i>
                                 <div data-i18n="Authentications">Authentications</div>
-                            </a>
+                            </div>
                             {showMenu ?
                                 <ul className="menu-sub">
                                     <li className={`menu-item ${component == 'login' && 'active'}`} onClick={() => { setComponent('login') }}>

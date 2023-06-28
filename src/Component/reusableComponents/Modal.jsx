@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 export const Modal = () =>{
     const data = [
         {     
@@ -12,13 +14,13 @@ export const Modal = () =>{
                     forLabel: 'nameBasic'
                 },
                 {
-                    type: 'text',
+                    type: 'email',
                     label: 'Email',
                     placeholder: 'xxxx@xxx.xx',
                     forLabel: 'emailBasic'
                 },
                 {
-                    type: 'text',
+                    type: 'date',
                     label: 'DOB',
                     placeholder: 'DD / MM / YY',
                     forLabel: 'dobBasic'
@@ -27,6 +29,19 @@ export const Modal = () =>{
             formButton: 'Save Changes'
         }
     ]
+    const [email, setEmail] = useState ('');
+    const [error, setError] = useState(null);
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
+    const handleChange = event => {
+        if (!isValidEmail(event.target.value)) {
+            setError('Email is invalid');
+        } else {
+            setError(null);
+        }
+        setEmail(event.target.value);
+    };
     return(
         data?.length > 0 && 
         <div className="container-xxl flex-grow-1 container-p-y">
@@ -67,7 +82,10 @@ export const Modal = () =>{
                                                             {item?.modalForm?.map((formItem) => (
                                                                 <>
                                                                 {formItem?.label && <label for={formItem?.forLabel} className="form-label">{formItem?.label}</label>}
-                                                                    {formItem?.placeholder && <input type={formItem?.type} id={formItem.forLabel} className="form-control" placeholder={formItem?.placeholder} />}
+                                                                    {formItem?.type == 'email' ?<>
+                                                                        <input type={formItem?.type} id={formItem.forLabel} className="form-control" placeholder={formItem?.placeholder} value={email} onChange={handleChange} /> 
+                                                                        {error && <p style={{ color: 'red' }}>{error}</p>}</>
+                                                                        : <input type={formItem?.type} id={formItem.forLabel} className="form-control" placeholder={formItem?.placeholder} /> }
                                                                 </>
                                                             ))}                                                           
                                                         </div>

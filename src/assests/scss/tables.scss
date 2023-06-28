@@ -1,0 +1,54 @@
+.table-borderless> :not(caption)>*>* {
+    border-bottom-width: 0;
+}
+.table> :not(caption)>*>* {
+    padding: 0.625rem 1.25rem;
+}
+.bg-label-primary {
+    background-color: #e7e7ff !important;
+    color: $primary-color !important;
+}
+.bg-label-success {
+    background-color: #e8fadf !important;
+    color: $btnSuccess !important;
+}
+.bg-label-info {
+    background-color: #d7f5fc !important;
+    color: $btnInfo !important;
+}
+.bg-label-warning {
+    background-color: #fff2d6 !important;
+    color: $btnWarning !important;
+}
+.badge {
+    display: inline-block;
+    padding: 0.52em 0.593em;
+    font-size: 0.8125em;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+.avatar-group .avatar-xs {
+    margin-left: -0.65rem;
+}
+.avatar-group .avatar {
+    transition: all 0.25s ease;
+}
+.avatar-xs {
+    width: 1.625rem;
+    height: 1.625rem;
+}
+.avatar-group .avatar:hover {
+    z-index: 30;
+    transition: all 0.25s ease;
+}
+.pull-up:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 0.25rem 1rem rgba(161, 172, 184, 0.45);
+    z-index: 30;
+    border-radius: 50%;
+}

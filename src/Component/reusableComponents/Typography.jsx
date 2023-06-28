@@ -124,7 +124,7 @@ export const Typography = () => {
         <div className="content-wrapper">
             <div className="container-xxl flex-grow-1 container-p-y">
                 <h4 className="fw-bold py-3 mb-4">Typography</h4>
-                {headingsData &&
+                {headingsData?.length > 0 &&
                 <div className="row">
                     <div className="col-lg">
                         <div className="card mb-4">
@@ -150,7 +150,7 @@ export const Typography = () => {
                 </div>}
 
                 <div className="row">
-                    {displayData &
+                    {displayData?.length > 0 &&
                     <div className="col-lg">
                         <div className="card mb-4">
                             <h5 className="card-header">Display headings</h5>
@@ -169,7 +169,7 @@ export const Typography = () => {
                             </table>
                         </div>
                     </div>}
-                    {paragraphData &&
+                    {paragraphData?.length > 0 &&
                     <div className="col-lg">
                         <div className="card mb-4">
                             <h5 className="card-header">Paragraph</h5>

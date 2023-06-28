@@ -46,7 +46,7 @@ export const Toast = () =>{
                                     {item?.time && <small>{item?.time}</small>}
                                     <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                                 </div>
-                                {item.discription && <div className="toast-body">
+                                {item?.discription && <div className="toast-body">
                                     {item?.discription}
                                 </div>}
                             </div>

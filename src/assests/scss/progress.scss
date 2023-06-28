@@ -1,0 +1,15 @@
+.progress .progress-bar:last-child {
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+.progress .progress-bar:first-child {
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+}
+.demo-vertical-spacing>* {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+}
+.bg-primary{
+    background-color: $primary-color !important;
+}

@@ -23,7 +23,8 @@ export const Modal = () =>{
                     placeholder: 'DD / MM / YY',
                     forLabel: 'dobBasic'
                 },
-            ]
+            ],
+            formButton: 'Save Changes'
         }
     ]
     return(
@@ -39,7 +40,7 @@ export const Modal = () =>{
                             <small className="text-light fw-semibold">Default</small>
                             {data?.map((item) => (
                                 <div className="mt-3">
-                                    {item?.modalButton && <button
+                                    {item?.modalID && <button
                                         type="button"
                                         className="btn btn-primary"
                                         data-bs-toggle="modal"
@@ -73,10 +74,7 @@ export const Modal = () =>{
                                                     </div>                                                   
                                                 </div>
                                                 <div className="modal-footer">
-                                                    <button type="button" className="btn btn-outline-secondary" data-bs-dismiss="modal">
-                                                        Close
-                                                    </button>
-                                                    <button type="button" className="btn btn-primary">Save changes</button>
+                                                    {item?.formButton && <button type="button" className="btn btn-primary">{item?.formButton}</button>}
                                                 </div>
                                             </div>
                                         </div>

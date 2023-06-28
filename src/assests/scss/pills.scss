@@ -1,0 +1,36 @@
+.nav-align-top {
+    flex-direction: column;
+}
+.nav-align-top,
+.nav-align-right,
+.nav-align-bottom,
+.nav-align-left {
+    display: flex;
+}
+  .nav-link.active {
+
+     &,
+     &:hover,
+     &:focus {
+         background-color: $primary-color !important;
+         color: $rgba-to-hex-bg;
+         box-shadow: 0 2px 4px 0 ($primary-color 0.4);
+     }
+ }
+ .nav-pills .nav-link:not(.active, .disabled) {
+     color: #566a7f;
+ }
+ .tab-content {
+     padding: $card-spacer-y;
+     border-radius: $border-radius;
+ }
+ .nav-align-top>.tab-content,
+ .nav-align-right>.tab-content,
+ .nav-align-bottom>.tab-content,
+ .nav-align-left>.tab-content {
+     flex-shrink: 1;
+     border: $card-border-width solid $border-color;
+     box-shadow: $card-box-shadow;
+     background-clip: padding-box;
+     background: $nav-tabs-link-active-bg;
+ }

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const Login = () => {
   const data = [
     {
@@ -6,7 +8,7 @@ export const Login = () => {
       formData: [
         {
           label: 'Email',
-          type: 'text',
+          type: 'email',
           name: 'email',
           placeholder: 'Enter your email'
         },
@@ -21,7 +23,20 @@ export const Login = () => {
       buttonTitle: 'Sign up'
     }
 
-  ]
+  ];
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
+  const handleChange = event => {
+    if (!isValidEmail(event.target.value)) {
+      setError('Email is invalid');
+    } else {
+      setError(null);
+    }
+    setEmail(event.target.value);
+  };
   return (
     data?.length > 0 &&
     <>
@@ -45,13 +60,20 @@ export const Login = () => {
                       {item.formData.map((formItem) => (
                         <div className={`mb-3 ${formItem?.type == 'password' && 'form-password-toggle'}`}>
                           {formItem?.name && <label for={formItem?.name} className="form-label">{formItem?.label}</label>}
-                          {formItem?.type && <input
-                            type={formItem?.type}
-                            className="form-control"
-                            id={formItem?.name}
-                            name={formItem?.name}
-                            placeholder={formItem?.placeholder}
-                          />}
+                          {formItem?.type &&
+                          <> 
+                          {formItem?.type == 'email' ? 
+                              <><input type={formItem?.type} id={formItem?.name} className="form-control" placeholder={formItem?.placeholder} value={email} onChange={handleChange} />{error && <p style={{ color: 'red' }}>{error}</p>}</> :  
+                              <input
+                                type={formItem?.type}
+                                className="form-control"
+                                id={formItem?.name}
+                                name={formItem?.name}
+                                placeholder={formItem?.placeholder}
+                              /> 
+                          }  
+                          </>
+                          }
                         </div>
                       ))}
                       {item?.privacy && <div className="mb-3">

@@ -1,8 +1,8 @@
 .form-label,
 .col-form-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: inherit;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: inherit;
 }
 
 .form-control {
@@ -21,26 +21,51 @@
     appearance: none;
     border-radius: 0.375rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        color: #697a8d;
+        background-color: #fff;
+        border-color: #696cff;
+        outline: 0;
+        box-shadow: 0 0 0.25rem 0.05rem rgba(105, 108, 255, 0.1);
+    }
+
+    &::-moz-placeholder {
+        color: #b4bdc6;
+        opacity: 1;
+    }
+
+    &::placeholder {
+        color: #b4bdc6;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        -moz-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    &::placeholder {
+        transition: all 0.25s ease;
+    }
+
+    &:focus::-moz-placeholder {
+        transform: translate(5px);
+        -moz-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    &:focus::placeholder {
+        transform: translate(5px);
+        transition: all 0.25s ease;
+    }
 }
-.form-control:focus {
-    color: #697a8d;
-    background-color: #fff;
-    border-color: rgba(249, 249, 255, 0.54);
-    outline: 0;
-    box-shadow: 0 0 0.25rem 0.05rem rgba(105, 108, 255, 0.1);
-  }
-  .form-control:focus, .form-select:focus {
+
+.form-select:focus {
     border-color: #696cff;
 }
-  .form-control::-moz-placeholder {
-    color: #b4bdc6;
-    opacity: 1;
-  }
-  .form-control::placeholder {
-    color: #b4bdc6;
-    opacity: 1;
-  }
-  .form-label {
+
+.form-label {
     margin-bottom: 0.5rem;
     font-size: 0.75rem;
     font-weight: 500;
@@ -61,38 +86,24 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-.form-control::-moz-placeholder {
-    -moz-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
 
-.form-control::placeholder {
-    transition: all 0.25s ease;
-}
-
-.form-control:focus::-moz-placeholder {
-    transform: translate(5px);
-    -moz-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-
-.form-control:focus::placeholder {
-    transform: translate(5px);
-    transition: all 0.25s ease;
-}
 .form-check-input {
     width: 1.2em;
     height: 1.2em;
 }
+
 label.form-check-label {
     vertical-align: middle;
 }
+
 .input-group-text {
     background-color: transparent;
 }
+
 .input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    border-left:unset;
+    border-left: unset;
 }
+
 .input-group-text i {
     font-size: 0.9375rem;
     color: #697a8d;

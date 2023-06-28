@@ -14,6 +14,7 @@ export const Accordion = () => {
         }
     ]
     return (
+        data?.length > 0 &&
         <div className="content-wrapper">
 
             <div className="container-xxl flex-grow-1 container-p-y">
@@ -27,7 +28,7 @@ export const Accordion = () => {
                             {data?.map((item, index) => (
                                 <>
                                     <div className="card accordion-item ">
-                                        <h2 className="accordion-header" id="headingOne">
+                                        {item?.title && <h2 className="accordion-header" id="headingOne">
                                             <button
                                                 type="button"
                                                 className="accordion-button"
@@ -38,9 +39,9 @@ export const Accordion = () => {
                                             >
                                                 {item?.title}
                                             </button>
-                                        </h2>
+                                        </h2>}
 
-                                        <div
+                                        {item?.discription && <div
                                             id={index}
                                             className="accordion-collapse collapse show"
                                             data-bs-parent="#accordionExample"
@@ -48,7 +49,7 @@ export const Accordion = () => {
                                             <div className="accordion-body">
                                                 {item?.discription}
                                             </div>
-                                        </div>
+                                        </div>}
                                     </div>
 
                                 </>

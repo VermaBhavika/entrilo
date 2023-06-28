@@ -1,7 +1,9 @@
-import './assests/scss/style.scss';
 import './assests/fonts/boxicons.css'
 import bootstrap from 'bootstrap';
-import { MainLayout } from './Component/pages/MainLayout';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  MainLayout
+} from './Component/pages/index';
 
 
 function App() {

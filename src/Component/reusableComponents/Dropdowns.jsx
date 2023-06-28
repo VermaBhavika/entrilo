@@ -92,6 +92,7 @@ export const Dropdowns = () => {
         },
     ]
     return (
+        data?.length > 0 &&
         <div className="container-xxl">
             <div className="card mb-4" id="btn-dropdown-demo">
                 <h5 className="card-header">Dropdowns</h5>
@@ -102,17 +103,17 @@ export const Dropdowns = () => {
                             {data?.map((item) => (
                                 <>
                                     <div className="btn-group">
-                                <button
+                                {item?.buttonType && <button
                                 type="button"
                                 className={`btn btn-${item?.buttonType} dropdown-toggle`}
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                             >
                                 {item?.buttonTitle}
-                                </button>
+                                </button>}
                                 <ul className="dropdown-menu">
                                     {item?.buttonDrops?.map((buttonItem) => (
-                                        <li><a className="dropdown-item" href="javascript:void(0);">{buttonItem?.buttonDrop}</a></li>
+                                        buttonItem?.buttonDrop && <li><a className="dropdown-item" href="javascript:void(0);">{buttonItem?.buttonDrop}</a></li>
                                     ))}
                                 </ul>
                                 </div>

@@ -1,11 +1,12 @@
 
+import '../../assests/scss/style.scss';
 import { useState, React } from 'react';
-import { DesignComponent } from './DesignComponent';
-import { Dashboard } from './Dashboard';
-import { ForgotPassword } from './ForgotPassword';
-import { Login } from './Login';
-import { Register } from './Register'
-import Avatar1 from '../../assests/img/avatars/1.png'
+import {
+    Avatar1
+} from '../../assests/img/index.js';
+import {
+    DesignComponent, Dashboard, ForgotPassword, Login, Register
+} from './index.js'
 
 export const MainLayout = () => {
 

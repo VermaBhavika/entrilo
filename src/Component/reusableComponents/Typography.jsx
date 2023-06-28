@@ -120,9 +120,11 @@ export const Typography = () => {
         }
     ]
     return (
+    
         <div className="content-wrapper">
             <div className="container-xxl flex-grow-1 container-p-y">
                 <h4 className="fw-bold py-3 mb-4">Typography</h4>
+                {headingsData &&
                 <div className="row">
                     <div className="col-lg">
                         <div className="card mb-4">
@@ -135,7 +137,7 @@ export const Typography = () => {
                                             <tr>
                                                 <td className="align-middle"><small className="text-light fw-semibold">{item?.heading}</small></td>
                                                 <td className="py-3">
-                                                    <HeadingTag className="mb-0">{item?.title}</HeadingTag>
+                                                    {item.title && <HeadingTag className="mb-0">{item?.title}</HeadingTag>}
                                                 </td>
                                             </tr>
                                         )
@@ -145,9 +147,10 @@ export const Typography = () => {
                             </table>
                         </div>
                     </div>
-                </div>
+                </div>}
 
                 <div className="row">
+                    {displayData &
                     <div className="col-lg">
                         <div className="card mb-4">
                             <h5 className="card-header">Display headings</h5>
@@ -157,7 +160,7 @@ export const Typography = () => {
                                         <tr>
                                             <td className="align-middle"><small className="text-light fw-semibold">{item?.heading}</small></td>
                                             <td className="py-3">
-                                                <h1 className={`mb-0 display-${index + 1}`}>{item?.title}</h1>
+                                                {item.title && <h1 className={`mb-0 display-${index + 1}`}>{item?.title}</h1>}
                                             </td>
                                         </tr>
                                     )
@@ -165,7 +168,8 @@ export const Typography = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>}
+                    {paragraphData &&
                     <div className="col-lg">
                         <div className="card mb-4">
                             <h5 className="card-header">Paragraph</h5>
@@ -184,10 +188,11 @@ export const Typography = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </div>
+                    </div>}
                 </div>
                
                 <div className="row">
+                    {blockquoteData &&
                     <div className="col-lg">
                         <div className="card mb-4 mb-lg-0">
                             <h5 className="card-header">Blockquote</h5>
@@ -196,7 +201,7 @@ export const Typography = () => {
                                     <div className="card-body">
                                         <figure className="mt-2">
                                             <blockquote className="blockquote">
-                                                <p className="mb-0">{item?.title}</p>
+                                                {item.title && <p className="mb-0">{item?.title}</p>}
                                             </blockquote>
                                             {item?.figCaption ? <figcaption className="blockquote-footer">
                                                 {item?.figCaption} <cite title="Source Title">{item?.sourceTitle}</cite>
@@ -209,7 +214,8 @@ export const Typography = () => {
 
 
                         </div>
-                    </div>
+                    </div>}
+                    {listData && 
                     <div className="col-lg">
                         <div className="card">
                             <h5 className="card-header">Lists</h5>
@@ -237,7 +243,7 @@ export const Typography = () => {
                                             <small className="text-light fw-semibold">Inline</small>
                                             <ul className="list-inline mt-2">
                                                 {item?.inline?.map((listItem) => (
-                                                    <li className="list-inline-item">{listItem?.list}</li>
+                                                    listItem && <li className="list-inline-item">{listItem?.list}</li>
                                                 ))}
                                             </ul>
                                         </>
@@ -247,7 +253,7 @@ export const Typography = () => {
 
 
                         </div>
-                    </div>
+                    </div>}
                 </div>
             </div>
         </div>

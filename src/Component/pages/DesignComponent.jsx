@@ -1,22 +1,5 @@
 import { useState, React } from 'react';
-import { Forms } from '../reusableComponents/Forms';
-import { List_Group } from '../reusableComponents/List_Group';
-import { Cards } from '../reusableComponents/Card';
-import { Spinner } from '../reusableComponents/Spinner';
-import { Breadcrumbs } from '../reusableComponents/Breadcrumbs';
-import { Pills } from '../reusableComponents/Pills';
-import { Toast } from '../reusableComponents/Toast';
-import { Dropdowns } from '../reusableComponents/Dropdowns';
-import { DropZone } from '../reusableComponents/DropZone';
-import { ProgressBar } from '../reusableComponents/ProgressBar';
-import { Modal } from '../reusableComponents/Modal';
-import { BasicTable } from '../reusableComponents/BasicTable';
-import { Typography } from '../reusableComponents/Typography';
-import { Accordion } from '../reusableComponents/Accordion';
-import { Images } from '../reusableComponents/Images';
-import { Carousel } from '../reusableComponents/Carousel';
-import { Skeleton } from '../reusableComponents/Skeleton';
-import { Button } from '../reusableComponents/Button';
+import { Button, Forms, List_Group, Cards, Spinner, Breadcrumbs, Pills, Toast, Dropdowns, DropZone, ProgressBar, Modal, BasicTable, Typography, Accordion, Images, Carousel, Skeleton } from '../reusableComponents/index';
 
 export const DesignComponent = () => {
     const [crumbs, setCrumbs] = useState(['Home','Category', 'Sub Category']);

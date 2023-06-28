@@ -1,12 +1,6 @@
-import ManLaptop from '../../assests/img/illustrations/man-with-laptop-light.png';
-// import Avatar1 from '../assests/img/avatars/1.png'
-import ChartSuccess from '../../assests/img/icons/unicons/chart-success.png';
-import WalletInfo from '../../assests/img/icons/unicons/wallet-info.png';
-import Paypal from '../../assests/img/icons/unicons/paypal.png';
-import CcPrimary from '../../assests/img/icons/unicons/cc-primary.png';
-import TotalChart from '../../assests/img/illustrations/total-chart.png';
-import GrowthChart from '../../assests/img/illustrations/growth-chart.png';
-import lineGraph from '../../assests/img/illustrations/line-graph.png';
+import {
+    ManLaptop, ChartSuccess, WalletInfo, Paypal, CcPrimary, TotalChart, GrowthChart, lineGraph
+} from '../../assests/img/index.js'
 export const Dashboard = () =>{
     return (
 

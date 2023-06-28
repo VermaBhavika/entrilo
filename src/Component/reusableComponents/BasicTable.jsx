@@ -1,6 +1,7 @@
-import avatar5 from '../../assests/img/avatars/5.png'
-import avatar6 from '../../assests/img/avatars/6.png'
-import avatar7 from '../../assests/img/avatars/7.png'
+import {
+    avatar5, avatar6, avatar7
+} from '../../assests/img/index.js'
+
 export const BasicTable = () => {
     const data = [
         {
@@ -46,6 +47,7 @@ export const BasicTable = () => {
         },
     ]
     return (
+        data?.length > 0 && 
         <div className="container-xxl">
             <div className="card">
                 <h5 className="card-header">Hoverable rows</h5>
@@ -63,11 +65,11 @@ export const BasicTable = () => {
                         <tbody className="table-border-bottom-0">
                             {data?.map((item) => (
                                 <tr>
-                                    <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>{item?.project}</strong></td>
-                                    <td>{item.client}</td>
+                                    {item?.project &&<td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>{item?.project}</strong></td>}
+                                    {item?.client && <td>{item?.client}</td>}
                                     <td>
                                         <ul className="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                                            <li
+                                            {item?.img1 && <li
                                                 data-bs-toggle="tooltip"
                                                 data-popup="tooltip-custom"
                                                 data-bs-placement="top"
@@ -75,8 +77,8 @@ export const BasicTable = () => {
                                                 title="Lilian Fuller"
                                             >
                                                 <img src={item?.img1} alt="Avatar" className="rounded-circle" />
-                                            </li>
-                                            <li
+                                            </li>}
+                                            {item?.img2 &&<li
                                                 data-bs-toggle="tooltip"
                                                 data-popup="tooltip-custom"
                                                 data-bs-placement="top"
@@ -84,8 +86,8 @@ export const BasicTable = () => {
                                                 title="Sophia Wilkerson"
                                             >
                                                 <img src={item?.img2} alt="Avatar" className="rounded-circle" />
-                                            </li>
-                                            <li
+                                            </li>}
+                                            {item?.img3 && <li
                                                 data-bs-toggle="tooltip"
                                                 data-popup="tooltip-custom"
                                                 data-bs-placement="top"
@@ -93,7 +95,7 @@ export const BasicTable = () => {
                                                 title="Christina Parker"
                                             >
                                                 <img src={item?.img3} alt="Avatar" className="rounded-circle" />
-                                            </li>
+                                            </li>}
                                         </ul>
                                     </td>
                                     <td><span className={`badge ${item?.status == 'active' ? 'bg-label-primary' : ''} ${item?.status == 'completed' ? 'bg-label-success' : ''} ${item?.status == 'Scheduled' ? 'bg-label-info' : ''} ${item?.status == 'Pending' ? 'bg-label-warning' : ''}  me-1`}>{item?.status}</span></td>
@@ -103,12 +105,12 @@ export const BasicTable = () => {
                                                 <i className="bx bx-dots-vertical-rounded"></i>
                                             </button>
                                             <div className="dropdown-menu">
-                                                <a className="dropdown-item" href="javascript:void(0);"
+                                                {item?.edit && <a className="dropdown-item" href="javascript:void(0);"
                                                 ><i className="bx bx-edit-alt me-1"></i> {item?.edit}</a
-                                                >
-                                                <a className="dropdown-item" href="javascript:void(0);"
+                                                >}
+                                                {item?.delete && <a className="dropdown-item" href="javascript:void(0);"
                                                 ><i className="bx bx-trash me-1"></i> {item?.delete}</a
-                                                >
+                                                >}
                                             </div>
                                         </div>
                                     </td>

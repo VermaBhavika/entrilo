@@ -2,7 +2,9 @@ const list = ["Bear claw cake biscuit", "Soufflé pastry pie ice", "Tart tiramis
 
 export const List_Group = () => {
     return (
+        list?.length> 0 &&
         <>
+        
             <div className="container-xxl flex-grow-1 container-p-y">
                 <div className="card mb-4">
                     <hr className="m-0" />

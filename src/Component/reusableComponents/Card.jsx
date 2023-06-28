@@ -1,4 +1,6 @@
-import card_img from '../../assests/img/elements/1.jpg'; 
+import {
+    card_img
+} from '../../assests/img/index.js'
 
 export const Cards = (props) => {
     return (

@@ -27,6 +27,7 @@ export const Modal = () =>{
         }
     ]
     return(
+        data?.length > 0 && 
         <div className="container-xxl flex-grow-1 container-p-y">
             <h4 className="fw-bold py-3 mb-4"><span className="text-muted fw-light">UI elements /</span> Modals</h4>
 
@@ -38,20 +39,20 @@ export const Modal = () =>{
                             <small className="text-light fw-semibold">Default</small>
                             {data?.map((item) => (
                                 <div className="mt-3">
-                                    <button
+                                    {item?.modalButton && <button
                                         type="button"
                                         className="btn btn-primary"
                                         data-bs-toggle="modal"
                                         data-bs-target={`#${item?.modalID}`}
                                     >
                                         {item?.modalButton}
-                                    </button>
+                                    </button>}
 
                                     <div className="modal fade" id={item?.modalID} tabIndex="-1" aria-hidden="true">
                                         <div className="modal-dialog" role="document">
                                             <div className="modal-content">
                                                 <div className="modal-header">
-                                                    <h5 className="modal-title" id="exampleModalLabel1">{item?.modalTitle}</h5>
+                                                    {item?.modalTitle && <h5 className="modal-title" id="exampleModalLabel1">{item?.modalTitle}</h5>}
                                                     <button
                                                         type="button"
                                                         className="btn-close"
@@ -64,8 +65,8 @@ export const Modal = () =>{
                                                         <div className="col mb-3">
                                                             {item?.modalForm?.map((formItem) => (
                                                                 <>
-                                                                <label for={formItem?.forLabel} className="form-label">{formItem?.label}</label>
-                                                                    <input type={formItem?.type} id={formItem.forLabel} className="form-control" placeholder={formItem?.placeholder} />
+                                                                {formItem?.label && <label for={formItem?.forLabel} className="form-label">{formItem?.label}</label>}
+                                                                    {formItem?.placeholder && <input type={formItem?.type} id={formItem.forLabel} className="form-control" placeholder={formItem?.placeholder} />}
                                                                 </>
                                                             ))}                                                           
                                                         </div>

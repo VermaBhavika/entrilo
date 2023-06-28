@@ -18,6 +18,7 @@ export const ForgotPassword = ()=>{
 
   ]
     return(
+      data?.length > 0 &&
         <>
               <div className="container-xxl">
       <div className="authentication-wrapper authentication-basic container-p-y">
@@ -34,21 +35,22 @@ export const ForgotPassword = ()=>{
               </div>
                   {data?.map((item) => (
                     <>
-                      <h4 className="mb-2">{item.title}</h4>
-                      <p className="mb-4">{item.label}</p>
+                      {item?.title && <h4 className="mb-2">{item?.title}</h4>}
+                      {item?.label && <p className="mb-4">{item?.label}</p>}
                       <form id="formAuthentication" className="mb-3" action="index.html" method="POST">
                         {item.formData.map((formItem) => (
                           <div className={`mb-3 ${formItem.type == 'password' ? 'form-password-toggle' : ''}`}>
-                            <label for={formItem.name} className="form-label">{formItem.label}</label>
-                            <input
-                              type={formItem.type}
+                            {formItem?.name && <label for={formItem?.name} className="form-label">{formItem?.label}</label>}
+                            {formItem?.type && <input
+                              type={formItem?.type}
                               className="form-control"
-                              id={formItem.name}
-                              name={formItem.name}
-                              placeholder={formItem.placeholder}
-                            />
+                              id={formItem?.name}
+                              name={formItem?.name}
+                              placeholder={formItem?.placeholder}
+                            />}
                           </div>
                         ))}
+                        {item?.privacy &&
                         <div className="mb-3">
                           <div className="form-check">
                             <input className="form-check-input" type="checkbox" id="terms-conditions" name="terms" />
@@ -56,8 +58,8 @@ export const ForgotPassword = ()=>{
                              {item.privacy}
                             </label>
                           </div>
-                        </div>
-                        <button className="btn btn-primary d-grid w-100">{item.buttonTitle}</button>
+                        </div>}
+                        {item?.buttonTitle && <button className="btn btn-primary d-grid w-100">{item.buttonTitle}</button>}
                       </form>
                     </>
                   ))}

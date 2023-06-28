@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 export const Pills = () => {
     const data = [
         {
@@ -17,6 +15,7 @@ export const Pills = () => {
     ]
     // const [isactive, setIsActive] = useState()
     return (
+        data?.length>0 && 
         <>
 
             <div className="container">
@@ -27,7 +26,7 @@ export const Pills = () => {
                         <div className="nav-align-top mb-4">
                             <ul className="nav nav-pills mb-3" role="tablist">
                                 {data?.map((item, index) => (
-                                    <li className="nav-item">
+                                    item.tabTitle && <li className="nav-item">
                                         <button
                                             type="button"
                                             className={`nav-link ${index == 0 ? "active" : ''}`}
@@ -45,7 +44,7 @@ export const Pills = () => {
                             </ul>
                             <div className="tab-content">
                                 {data.map((item, index) => (
-                                    <div className={`tab-pane fade show ${index == 0 ? "active" : ''}`} id={`navs-pills-top-${index + 1}`} role="tabpanel">
+                                    item.tabDiscription && <div className={`tab-pane fade show ${index == 0 ? "active" : ''}`} id={`navs-pills-top-${index + 1}`} role="tabpanel">
                                        {item.tabDiscription}
                                     </div>
                                 ))}

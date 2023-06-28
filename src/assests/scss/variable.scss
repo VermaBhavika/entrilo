@@ -32,3 +32,9 @@ $headings-color: rgba-to-hex($gray-900, $rgba-to-hex-bg) !default;
 $nav-tabs-btn-color: $headings-color !default; // (C)
 $nav-tabs-btn-bg: rgba-to-hex($gray-100, $rgba-to-hex-bg) !default; // (C)
 $nav-link-disabled-color: $text-lighter !default;
+$btnPrimary: #696cff;
+$btnSecondary: #8592a3;
+$btnSuccess: #71dd37;
+$btnDanger: #ff3e1d;
+$btnWarning: #ffab00;
+$btnInfo: #03c3ec;

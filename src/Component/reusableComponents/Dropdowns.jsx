@@ -3,7 +3,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'Primary',
             buttonType: 'primary',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -18,7 +18,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'Secondary',
             buttonType: 'secondary',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -33,7 +33,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'Success',
             buttonType: 'success',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -48,7 +48,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'Danger',
             buttonType: 'danger',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -63,7 +63,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'warning',
             buttonType: 'warning',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -78,7 +78,7 @@ export const Dropdowns = () => {
         {
             buttonTitle: 'info',
             buttonType: 'info',
-            buttonDrops:[
+            buttonDrops: [
                 {
                     buttonDrop: 'Action',
                 },
@@ -97,28 +97,26 @@ export const Dropdowns = () => {
             <div className="card mb-4" id="btn-dropdown-demo">
                 <h5 className="card-header">Dropdowns</h5>
                 <div className="card-body">
-                    <div className="demo-inline-spacing">                        
-                            {data?.map((item) => (
-                                <>
-                                    <div className="btn-group">
-                                {item?.buttonType && <button
-                                type="button"
-                                className={`btn btn-${item?.buttonType} dropdown-toggle`}
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                            >
-                                {item?.buttonTitle}
-                                </button>}
-                                <ul className="dropdown-menu">
-                                    {item?.buttonDrops?.map((buttonItem) => (
-                                        buttonItem?.buttonDrop && <li><a className="dropdown-item" href="javascript:void(0);">{buttonItem?.buttonDrop}</a></li>
-                                    ))}
-                                </ul>
+                    <div className="demo-inline-spacing">
+                        {data?.map((item) => (
+                            <>
+                                <div className="btn-group">
+                                    {item?.buttonType && <button
+                                        type="button"
+                                        className={`btn btn-${item?.buttonType} dropdown-toggle`}
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        {item?.buttonTitle}
+                                    </button>}
+                                    <ul className="dropdown-menu">
+                                        {item?.buttonDrops?.map((buttonItem) => (
+                                            buttonItem?.buttonDrop && <li><a className="dropdown-item" href="javascript:void(0);">{buttonItem?.buttonDrop}</a></li>
+                                        ))}
+                                    </ul>
                                 </div>
-                                </>
-                            ))}                         
-                        
-
+                            </>
+                        ))}
                     </div>
                 </div>
             </div>

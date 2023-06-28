@@ -38,17 +38,13 @@ export const Button = () => {
                                 {item?.buttonTitle && <div className="btn-group">
                                     <button
                                         type="button"
-                                        className={`btn btn-${item?.buttonType}`}
-                                       
+                                        className={`btn btn-${item?.buttonType}`}                                       
                                     >
                                         {item?.buttonTitle}
-                                    </button>
-                                    
+                                    </button>                                    
                                 </div>}
                             </>
                         ))}
-
-
                     </div>
                 </div>
             </div>

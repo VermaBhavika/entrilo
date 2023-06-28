@@ -21,7 +21,6 @@ export const Pills = () => {
 
             <div className="container">
                 <h5 className="py-3 my-4">Pills</h5>
-
                 <div className="row">
                     <div className="col-xl-12">
                         <div className="nav-align-top mb-4">

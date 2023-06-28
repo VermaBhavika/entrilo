@@ -1,6 +1,4 @@
-import slider_img1 from '../../assests/img/elements/1.jpg'; 
-import slider_img2 from '../../assests/img/elements/2.jpg'; 
-import slider_img3 from '../../assests/img/elements/3.jpg'; 
+import { slider_img1,slider_img2,slider_img3 } from '../../assests/img/index.js';
 
 const Slider = [
     { image:slider_img1, heading:'First slide', description:'Eos mutat malis maluisset et, agam ancillae quo te, in vim congue pertinacia.'},
@@ -10,7 +8,9 @@ const Slider = [
 
 
 export const Carousel = () => {
+   
     return (
+        Slider?.length > 0 && 
         <>
             <div className="content-wrapper">
                 <div className="container-xxl flex-grow-1 container-p-y">

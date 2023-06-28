@@ -7,6 +7,7 @@ const Form_data = [
 
 export const Forms = () => {
   return (
+    Form_data?.length > 0 && 
     <>
 
       <div className="content-wrapper">

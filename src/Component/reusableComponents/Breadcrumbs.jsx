@@ -8,7 +8,7 @@ export const Breadcrumbs = (props) => {
         <>
             <div className="container-xxl flex-grow-1 container-p-y">
                 <div className="card">
-                    <h5 className="card-header">{props.mainheading}</h5>
+                {props.mainheading && <h5 className="card-header">{props.mainheading}</h5>}
                     <div className="card-body">
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb breadcrumb-style1">

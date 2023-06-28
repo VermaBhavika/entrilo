@@ -3,7 +3,7 @@ import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assests/scss/style.scss'
 import {
-  MainLayout,Login, Register, ForgotPassword
+  MainLayout
 } from './Component/pages/index';
 
 

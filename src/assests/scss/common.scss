@@ -247,3 +247,7 @@ label.form-check-label {
   background-color: transparent;
   border-bottom: 0 solid #d9dee3;
 }
+.text-light {
+  --bs-text-opacity: 1;
+  color: #b4bdc6 !important;
+}

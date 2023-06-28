@@ -98,7 +98,7 @@ export const BasicTable = () => {
                                             </li>}
                                         </ul>
                                     </td>
-                                    <td><span className={`badge ${item?.status == 'active' ? 'bg-label-primary' : ''} ${item?.status == 'completed' ? 'bg-label-success' : ''} ${item?.status == 'Scheduled' ? 'bg-label-info' : ''} ${item?.status == 'Pending' ? 'bg-label-warning' : ''}  me-1`}>{item?.status}</span></td>
+                                    <td><span className={`badge ${item?.status == 'active' ? 'bg-label-primary' : ''} ${item?.status == 'Completed' ? 'bg-label-success' : ''} ${item?.status == 'Scheduled' ? 'bg-label-info' : ''} ${item?.status == 'Pending' ? 'bg-label-warning' : ''}  me-1`}>{item?.status}</span></td>
                                     <td>
                                         <div className="dropdown">
                                             <button type="button" className="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">

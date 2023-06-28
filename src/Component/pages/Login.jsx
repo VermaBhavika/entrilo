@@ -8,16 +8,16 @@ export const Login = () => {
           label: 'Email',
           type: 'text',
           name: 'email',
-          placeholder: 'enter your email'
+          placeholder: 'Enter your email'
         },
         {
           label: 'password',
           type: 'text',
           name: 'password',
-          placeholder: 'password'
+          placeholder: 'Password'
         },
       ],
-      privacy: 'I agree to privacy policy & terms',
+      privacy: 'Remember Me',
       buttonTitle: 'Sign up'
     }
 

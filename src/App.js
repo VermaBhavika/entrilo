@@ -3,15 +3,14 @@ import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assests/scss/style.scss'
 import {
-  MainLayout,Login
+  MainLayout,Login, Register, ForgotPassword
 } from './Component/pages/index';
 
 
 function App() {
   return (
     <>
-      {/* <MainLayout/> */}
-      <Login />
+      <MainLayout/>
     </>
   );
 }

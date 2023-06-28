@@ -2,38 +2,20 @@
     margin: 1rem 0.375rem 0 0 !important;
 }
 .btn-primary {
-    color: $white;
-    background-color: $btnPrimary;
-    border-color: $btnPrimary;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
+    @include button($white, $btnPrimary, $btnPrimary, $shadowPrimary );
 }
 .btn-secondary {
-    color: $white;
-    background-color: $btnSecondary;
-    border-color: $btnSecondary;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(133, 146, 163, 0.4);
+    @include button($white, $btnSecondary, $btnSecondary, $shadowSecondary);
 }
 .btn-success {
-    color: $white;
-    background-color: $btnSuccess;
-    border-color: $btnSuccess;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(113, 221, 55, 0.4);
+    @include button($white, $btnSuccess, $btnSuccess, $shadowSuccess);
 }
 .btn-danger {
-    color: $white;
-    background-color: $btnDanger;
-    border-color: $btnDanger;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 62, 29, 0.4);
+    @include button($white, $btnDanger, $btnDanger, $shadowDanger);
 }
 .btn-warning {
-    color: $white;
-    background-color: $btnWarning;
-    border-color:$btnWarning;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 171, 0, 0.4);
+    @include button($white, $btnWarning, $btnWarning, $shadowWarning);
 }
 .btn-info {
-    color: $white;
-    background-color: $btnInfo;
-    border-color: $btnInfo;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(3, 195, 236, 0.4);
+    @include button($white, $btnInfo, $btnInfo, $shadowInfo);
 }

@@ -559,38 +559,9 @@ img.lineGraph {
     font-size: 1.25rem;
 }
 
-.avatar {
-    position: relative;
-    width: 2.375rem;
-    height: 2.375rem;
-    cursor: pointer;
-
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.avatar.avatar-online:after,
-.avatar.avatar-offline:after,
-.avatar.avatar-away:after,
-.avatar.avatar-busy:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 3px;
-    width: 8px;
-    height: 8px;
-    border-radius: 100%;
-    box-shadow: 0 0 0 2px #fff;
-}
 
 a.nav-link.dropdown-toggle.hide-arrow::after {
     display: none;
-}
-
-.avatar.avatar-online:after {
-    background-color: #71dd37;
 }
 
 .navbar-nav {

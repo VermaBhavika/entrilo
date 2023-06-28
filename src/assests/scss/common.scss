@@ -34,12 +34,7 @@ a{
         padding: 1.5rem 1.5rem;
     }
 } 
-.btn-primary {
-  color: #fff;
-  background-color: #696cff;
-  border-color: #696cff;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
-}
+
 
 
 .carousel-indicators li::marker {
@@ -131,11 +126,11 @@ a{
 }
 
 .text-primary {
-  color: #696cff !important;
+  color: $primary-color !important;
 }
 .btn-outline-primary {
-  color: #696cff;
-  border-color: #696cff;
+  color: $primary-color;
+  border-color: $primary-color;
   background: transparent;
 }
 .btn-outline-primary:hover {
@@ -159,12 +154,7 @@ a{
   background-color: transparent;
   border-bottom: 0 solid #d9dee3;
 }
-.btn-primary {
-    color: #fff;
-    background-color: #696cff;
-    border-color: #696cff;
-    box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
-}
+
 .breadcrumb-item, .breadcrumb-item a {
     color: #697a8d;
 }

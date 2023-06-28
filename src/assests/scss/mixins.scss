@@ -1,0 +1,10 @@
+@mixin backgroundLabel ($labelBackground, $labelColor) {
+    background-color: $labelBackground ;
+    color: $labelColor ;
+}
+@mixin button($buttonColor, $buttonBg, $buttonBorder, $buttonShadow ) {
+    color: $buttonColor;
+    background-color: $buttonBg;
+    border-color: $buttonBorder;
+    box-shadow: 0 0.125rem 0.25rem 0 $buttonShadow;
+}

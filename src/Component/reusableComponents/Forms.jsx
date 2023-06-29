@@ -1,8 +1,8 @@
 const Form_data = [
-  { label: 'FULL NAME', type: 'text', icon: <i classNameName="bx bx-user"></i> },
-  { label: 'COMPANY', type: 'text', icon: <i classNameName="bx bx-buildings"></i> },
-  { label: 'EMAIL', type: 'email', icon: <i classNameName="bx bx-envelope"></i> },
-  { label: 'PHONE NO', type: 'text', icon: <i classNameName="bx bx-phone"></i> },
+  { label: 'FULL NAME', type: 'text', icon: <i className="bx bx-user"></i> },
+  { label: 'COMPANY', type: 'text', icon: <i className="bx bx-buildings"></i> },
+  { label: 'EMAIL', type: 'email', icon: <i className="bx bx-envelope"></i> },
+  { label: 'PHONE NO', type: 'text', icon: <i className="bx bx-phone"></i> },
 ];
 
 export const Forms = () => {
@@ -10,27 +10,27 @@ export const Forms = () => {
     Form_data?.length > 0 && 
     <>
 
-      <div classNameName="content-wrapper">
+      <div className="content-wrapper">
 
-        <div classNameName="container-xxl flex-grow-1 container-p-y">
-          <h4 classNameName="fw-bold py-3 mb-4"><span classNameName="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
-          <div classNameName="row">
-            <div classNameName="col-xl">
-              <div classNameName="card mb-4">
-                <div classNameName="card-body">
+        <div className="container-xxl flex-grow-1 container-p-y">
+          <h4 className="fw-bold py-3 mb-4"><span className="text-muted fw-light">Forms/</span> Vertical Layouts</h4>
+          <div className="row">
+            <div className="col-xl">
+              <div className="card mb-4">
+                <div className="card-body">
                   <form>
 
                     {Form_data.map((item) => (
                       <>
-                        <div classNameName="mb-3">
-                          <label classNameName="form-label" for="basic-icon-default-company">{item.label}</label>
-                          <div classNameName="input-group input-group-merge">
-                            <span id="basic-icon-default-company2" classNameName="input-group-text">
+                        <div className="mb-3">
+                          <label className="form-label" for="basic-icon-default-company">{item.label}</label>
+                          <div className="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" className="input-group-text">
                               {item.icon}
                             </span>
                             <input
                               type={item.type}
-                              classNameName="form-control"
+                              className="form-control"
                               placeholder={item.label}
                               aria-label={item.label}
                             />
@@ -38,7 +38,7 @@ export const Forms = () => {
                         </div>
                       </>
                     ))}
-                    <div classNameName="mb-3">
+                    <div className="mb-3">
                       <label className="form-label" for="basic-icon-default-message">Message</label>
                       <div className="input-group input-group-merge">
                         <span id="basic-icon-default-message2" className="input-group-text"
@@ -53,7 +53,7 @@ export const Forms = () => {
                         ></textarea>
                       </div>
                     </div>
-                    <button type="submit" classNameName="btn btn-primary">Send</button>
+                    <button type="submit" className="btn btn-primary">Send</button>
                   </form>
                 </div>
               </div>
